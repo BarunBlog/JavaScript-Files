@@ -22,7 +22,7 @@ var myGlobal = 10; // global variable
 
 function fun1(){
   // determined as a global variable if var is not given but it will throw an error but will work in browser
-  var oopsGlobal = 5; // if var is there then it is local variable 
+  var oopsGlobal = 5; // if var is there then it is local variable
 }
 
 function fun2(){
@@ -38,3 +38,13 @@ function fun2(){
 
 fun1();
 fun2();
+console.log("\n");
+
+
+// Local Scope and Functions
+function myLocalScope(){
+  var myVar = 5;
+  console.log(myVar);
+}
+myLocalScope();
+// console.log(myVar); will throw an error
